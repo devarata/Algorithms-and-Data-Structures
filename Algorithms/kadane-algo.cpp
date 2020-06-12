@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<math.h>
 using namespace std;
 
 int maxSubArray(vector<int>& nums) {
@@ -9,8 +10,8 @@ int maxSubArray(vector<int>& nums) {
       if(sum<0)
           sum=0;
           sum +=nums[i];
-          best=Math.max(best,sum);
+          best=max(best,sum);
   }
 
-  return Math.max(best,sum);
+  return max(best,sum);
 }
